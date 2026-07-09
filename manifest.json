@@ -1,0 +1,9 @@
+{
+  "id": "zimeiti-article",
+  "name": "Zimeiti Article",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Extract article style from notes and generate articles inside Obsidian.",
+  "author": "jiang",
+  "isDesktopOnly": false
+}
