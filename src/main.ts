@@ -180,7 +180,6 @@ export default class ZimeitiArticlePlugin extends Plugin {
   }
 
   async onunload() {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE_ZIMEITI);
   }
 
   async loadSettings() {
@@ -197,7 +196,6 @@ export default class ZimeitiArticlePlugin extends Plugin {
       leaf = this.app.workspace.getRightLeaf(false) ?? undefined;
       await leaf?.setViewState({ type: VIEW_TYPE_ZIMEITI, active: true });
     }
-    if (leaf) this.app.workspace.revealLeaf(leaf);
   }
 
   async openDocumentation() {
@@ -234,7 +232,6 @@ export default class ZimeitiArticlePlugin extends Plugin {
     if (file instanceof TFile) {
       const leaf = this.app.workspace.getLeaf(true);
       await leaf.openFile(file);
-      this.app.workspace.revealLeaf(leaf);
     }
   }
 
@@ -646,9 +643,8 @@ class StyleNameModal extends Modal {
       type: "text",
       value: this.defaultName,
       placeholder: "请输入风格名称",
+      cls: "zimeiti-style-name-input",
     });
-    this.inputEl.style.width = "100%";
-    this.inputEl.style.marginTop = "12px";
 
     const actions = contentEl.createDiv({ cls: "zimeiti-style-name-actions" });
     const cancel = actions.createEl("button", { text: "取消" });

@@ -203,3 +203,8 @@
 .zimeiti-form-field select {
   width: 100%;
 }
+
+.zimeiti-style-name-input {
+  width: 100%;
+  margin-top: 12px;
+}

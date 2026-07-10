@@ -3,7 +3,7 @@
   "name": "Zimeiti Article",
   "version": "0.1.0",
   "minAppVersion": "1.5.0",
-  "description": "Extract article style from notes and generate articles.",
+  "description": "Extract article style from notes and generate articles for your workspace.",
   "author": "jiang",
   "isDesktopOnly": false
 }
