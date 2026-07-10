@@ -1,0 +1,205 @@
+.zimeiti-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.zimeiti-guide h2,
+.zimeiti-guide h3,
+.zimeiti-guide p,
+.zimeiti-guide ol {
+  margin: 0;
+}
+
+.zimeiti-guide-panel {
+  padding: 12px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+}
+
+.zimeiti-guide-panel ol {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.zimeiti-muted {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.zimeiti-select-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.zimeiti-select-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.zimeiti-select-text.is-selected {
+  font-weight: 600;
+}
+
+.zimeiti-select-check {
+  color: var(--text-accent);
+  font-weight: 700;
+}
+
+.zimeiti-select-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--background-modifier-border);
+  margin-top: 8px;
+  position: sticky;
+  bottom: 0;
+  background: var(--background-primary);
+  z-index: 1;
+}
+
+.zimeiti-select-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.zimeiti-select-count {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.zimeiti-note-modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding-right: 34px;
+  box-sizing: border-box;
+}
+
+.zimeiti-note-modal-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 6px;
+}
+
+.zimeiti-note-modal-count {
+  color: var(--text-muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.zimeiti-note-modal-confirm {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  background: var(--background-secondary);
+  color: var(--text-accent);
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
+}
+
+.zimeiti-note-modal-confirm:disabled {
+  opacity: 0.45;
+}
+
+.zimeiti-note-modal-search {
+  margin: 0 0 10px;
+}
+
+.zimeiti-note-modal-search input {
+  width: 100%;
+  min-height: 34px;
+}
+
+.zimeiti-note-modal-results {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 52vh;
+  overflow: auto;
+}
+
+.zimeiti-note-modal-empty {
+  padding: 14px 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.zimeiti-note-modal-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.zimeiti-note-modal-row.is-selected {
+  background: var(--background-secondary);
+  border-color: var(--interactive-accent);
+}
+
+.zimeiti-note-modal-row-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.zimeiti-note-modal-row-title {
+  font-weight: 600;
+}
+
+.zimeiti-note-modal-row-path {
+  color: var(--text-muted);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zimeiti-note-modal-row-mark {
+  width: 18px;
+  text-align: center;
+  color: var(--interactive-accent);
+  font-weight: 700;
+}
+
+.zimeiti-style-name-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.zimeiti-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.zimeiti-form-field label {
+  font-weight: 600;
+}
+
+.zimeiti-form-field input,
+.zimeiti-form-field textarea,
+.zimeiti-form-field select {
+  width: 100%;
+}
